@@ -1,0 +1,5 @@
+flet==0.21.2
+Pillow
+ffmpeg-python
+docx2pdf
+pypdf
