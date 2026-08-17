@@ -5,6 +5,9 @@ jenkins:
     serviceType: "NodePort"
     servicePort: 8080
     nodePort: 32000 # Porta fixa para acessar via localhost no Kind
+
+    image: "jenkins/jenkins"
+    tag: "2.479.3-jdk17"
     
     # Configuração básica de recursos
     resources:
