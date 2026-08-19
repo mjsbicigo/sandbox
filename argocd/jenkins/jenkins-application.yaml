@@ -14,5 +14,8 @@ spec:
     namespace: jenkins # Namespace onde o Jenkins será criado no cluster
   syncPolicy:
     automated:
-      prune: true # Deleta recursos no cluster se forem removidos do Git
-      selfHeal: true # Corrige o cluster automaticamente se alguém alterar algo manualmente
+      enabled: true # Sincroniza automaticamente quando o git é alterado.
+      prune: false # Deleta recursos no cluster se forem removidos do Git
+      selfHeal: false # Corrige o cluster automaticamente se alguém alterar algo manualmente
+    syncOptions:
+      - CreateNamespace=true
