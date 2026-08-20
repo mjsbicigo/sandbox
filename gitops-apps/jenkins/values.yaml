@@ -1,8 +1,8 @@
 jenkins:
   controller:
     componentName: "jenkins"
-    # Usamos NodePort ou LoadBalancer para facilitar o acesso local no Kind
-    serviceType: "NodePort"
+    replicas: 0
+    serviceType: "NodePort" # Usar NodePort ou LoadBalancer para facilitar o acesso local no Kind
     servicePort: 8080
     nodePort: 32000 # Porta fixa para acessar via localhost no Kind
 
