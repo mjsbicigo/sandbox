@@ -21,7 +21,7 @@ spec:
       containers:
       - name: queue-metrics-api
 
-        image: seuacr.azurecr.io/queue-metrics-api:latest
+        image: marciosbicigo/get-metrics-oci-queue:latest
 
         ports:
         - containerPort: 8080
