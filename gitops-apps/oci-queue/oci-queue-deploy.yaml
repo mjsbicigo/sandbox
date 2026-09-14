@@ -26,7 +26,7 @@ spec:
       containers:
       - name: queue-metrics-api
 
-        image: marciosbicigo/get-metrics-oci-queue:1.0
+        image: marciosbicigo/get-metrics-oci-queue:1.1
 
         ports:
         - containerPort: 8080
